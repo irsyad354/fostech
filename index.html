@@ -1,11 +1,240 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irsyad</title>
-</head>
-<body>
-    <h1>Irsyad Azka Saputra</h1>
-</body>
+<!-- index.html -->
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Website portofolio Irsyad Azka Saputra, mahasiswa Teknik Informatika dan Frontend Developer pemula."
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>Irsyad Azka Saputra</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="css/aos.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#beranda" class="logo"><span>Irsyad Az</span>ka Saputra</a>
+      <nav class="navbar">
+        <a href="#beranda" class="active">Beranda</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#kontak">Kontak</a>
+
+        <!-- DARK MODE BUTTON -->
+        <button
+          id="dark-mode-toggle"
+          class="toggle-btn"
+          title="Toggle dark mode"
+        >
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- ===================== BERANDA ===================== -->
+      <section id="beranda" class="home">
+        <div class="home-content">
+          <h3 data-aos="fade-down" data-aos-delay="0">Hi</h3>
+          <h1 data-aos="fade-right" data-aos-delay="100">I'm <span>Irsyad</span></h1>
+          <h2 data-aos="fade-right" data-aos-delay="200">Informatics Engineering Student & Frontend Developer</h2>
+          <p data-aos="fade-up" data-aos-delay="300">
+            Saya adalah mahasiswa Teknik Informatika yang tertarik pada
+            pengembangan website modern, desain antarmuka (UI), dan teknologi
+            perangkat lunak. Saya senang mempelajari hal baru serta membuat
+            website yang responsif, interaktif, dan mudah digunakan.
+          </p>
+        </div>
+        <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
+          <img
+            src="images/foto-saya.jpg"
+            alt="Foto Profil Irsyad Azka Saputra 1"
+          />
+        </div>
+      </section>
+
+      <!-- ===================== ABOUT ===================== -->
+      <section class="about">
+        <div class="about-img" data-aos="zoom-in" data-aos-delay="100">
+          <img
+            src="images/foto-saya2.jpeg"
+            alt="Foto Profil Irsyad Azka Saputra 2"
+          />
+        </div>
+        <div class="about-content">
+          <h2 data-aos="fade-left" data-aos-delay="0">About <span>Me</span></h2>
+          <h3 data-aos="fade-left" data-aos-delay="100">Frontend <span>Developer</span></h3>
+          <p data-aos="fade-up" data-aos-delay="200">
+            Saya memiliki minat dalam bidang Frontend Development dan sedang
+            mempelajari HTML, CSS, JavaScript, PHP, serta database MySQL. Saya
+            suka membuat tampilan website yang modern, responsive, dan nyaman
+            digunakan di berbagai perangkat.
+          </p>
+          <p data-aos="fade-up" data-aos-delay="300">
+            Selain belajar pengembangan web, saya juga aktif mengikuti kegiatan
+            organisasi dan kepanitiaan untuk meningkatkan kemampuan komunikasi,
+            kerja sama tim, dan kepemimpinan.
+          </p>
+          <div class="btn-box" data-aos="fade-up" data-aos-delay="400">
+            <a href="#portofolio" class="btn-1">Lihat Portofolio</a>
+            <a href="#kontak" class="btn-2">Hubungi Saya</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== PORTOFOLIO ===================== -->
+      <section id="portofolio" class="portfolio-section">
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="0">My <span>Projects</span></h2>
+        <div class="portfolio-container">
+          <!-- PROJECT 1 -->
+          <div class="portfolio-card" data-aos="flip-left" data-aos-delay="100">
+            <img src="images/alice.png" alt="Project 1" data-aos="zoom-in" data-aos-delay="200" />
+            <h3 data-aos="fade-up" data-aos-delay="250">Alice Adventure Game</h3>
+            <p data-aos="fade-up" data-aos-delay="300">
+              Game petualangan tentang Penyihir yang melawan para raksasa untuk
+              mendapatkan harta karun tersembunyi di dalam kastil.
+            </p>
+          </div>
+          <!-- PROJECT 2 -->
+          <div class="portfolio-card" data-aos="flip-left" data-aos-delay="250">
+            <img src="images/greenfoot.png" alt="Project 2" data-aos="zoom-in" data-aos-delay="350" />
+            <h3 data-aos="fade-up" data-aos-delay="400">Greenfoot Car Shooter</h3>
+            <p data-aos="fade-up" data-aos-delay="450">
+              Game mobil menembak menggunakan Greenfoot, di mana pemain dapat
+              bergerak ke kanan dan kiri serta menembak untuk menghindari
+              tabrakan.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== ORGANISASI ===================== -->
+      <section class="portfolio-section portfolio-section--alt">
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="0">Organization <span>Experience</span></h2>
+        <div class="portfolio-container">
+          <!-- ORGANISASI 1 -->
+          <div class="portfolio-card" data-aos="flip-right" data-aos-delay="100">
+            <img src="images/cai2024.jpeg" alt="Organisasi 1" data-aos="zoom-in" data-aos-delay="200" />
+            <h3 data-aos="fade-up" data-aos-delay="250">Sie P3K — Perkemahan CAI 2024</h3>
+            <p data-aos="fade-up" data-aos-delay="300">
+              Bertugas membantu menangani peserta dan panitia yang mengalami
+              gangguan kesehatan selama kegiatan perkemahan berlangsung.
+            </p>
+          </div>
+          <!-- ORGANISASI 2 -->
+          <div class="portfolio-card" data-aos="flip-right" data-aos-delay="200">
+            <img src="images/cai2025.JPG" alt="Organisasi 2" data-aos="zoom-in" data-aos-delay="300" />
+            <h3 data-aos="fade-up" data-aos-delay="350">Sie Acara — Perkemahan CAI 2025</h3>
+            <p data-aos="fade-up" data-aos-delay="400">
+              Membantu menyusun konsep, susunan kegiatan, dan jalannya acara
+              agar kegiatan perkemahan berjalan dengan baik.
+            </p>
+          </div>
+          <!-- ORGANISASI 3 -->
+          <div class="portfolio-card" data-aos="flip-right" data-aos-delay="300">
+            <img src="images/fas2025.jpg" alt="Organisasi 3" data-aos="zoom-in" data-aos-delay="400" />
+            <h3 data-aos="fade-up" data-aos-delay="450">Sie Bazar — Festival Anak Sholeh 2025</h3>
+            <p data-aos="fade-up" data-aos-delay="500">
+              Bertanggung jawab dalam penyediaan stand bazar serta membantu
+              proses pendaftaran peserta stand.
+            </p>
+          </div>
+        </div>
+        <div class="btn-box" data-aos="zoom-in-up" data-aos-delay="400">
+          <a href="#kontak" class="btn-2">Hubungi Saya</a>
+        </div>
+      </section>
+
+      <!-- ===================== KONTAK ===================== -->
+      <section id="kontak" class="contact-form">
+        <h2 data-aos="fade-down" data-aos-delay="0">Contact <span>Me</span></h2>
+        <p class="contact-desc" data-aos="fade-up" data-aos-delay="100">
+          Terima kasih telah mengunjungi website portofolio saya. Jika Anda
+          memiliki pertanyaan, kerja sama, atau ingin berdiskusi mengenai
+          project, silakan hubungi saya melalui form atau informasi kontak di
+          bawah ini.
+        </p>
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="150">
+          <div class="info-item" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fa-solid fa-envelope"></i>
+            <span>irsyadazka4@gmail.com</span>
+          </div>
+          <div class="info-item" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>+62 813-2530-0595</span>
+          </div>
+          <div class="info-item" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Surakarta, Jawa Tengah, Indonesia</span>
+          </div>
+        </div>
+        <form action="#" data-aos="fade-up" data-aos-delay="200">
+          <div id="form-success" class="form-success" style="display:none;">
+            <i class="fa-solid fa-circle-check"></i> Pesan berhasil dikirim! Terima kasih.
+          </div>
+          <div class="input-box" data-aos="fade-right" data-aos-delay="250">
+            <input type="text" id="nama" placeholder="Nama Lengkap" />
+            <input type="email" id="email" placeholder="Email" />
+          </div>
+          <div class="input-box" data-aos="fade-left" data-aos-delay="350">
+            <input type="tel" id="telepon" placeholder="Nomor HP" />
+            <input type="text" id="subjek" placeholder="Subjek" />
+          </div>
+          <textarea id="pesan" rows="8" placeholder="Pesan" data-aos="fade-up" data-aos-delay="450"></textarea>
+          <div data-aos="zoom-in-up" data-aos-delay="550">
+            <input type="submit" value="Kirim Pesan" class="btn-1" />
+          </div>
+        </form>
+        <p class="contact-closing" data-aos="fade-up" data-aos-delay="600">
+          Saya akan berusaha merespons pesan secepat mungkin. Terima kasih atas
+          perhatian dan kunjungannya.
+        </p>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.instagram.com/" data-aos="zoom-in" data-aos-delay="100"
+          ><i class="fa-brands fa-instagram" title="instagram"></i
+        ></a>
+        <a href="https://web.facebook.com/" data-aos="zoom-in" data-aos-delay="200"
+          ><i class="fa-brands fa-facebook-f" title="facebook"></i
+        ></a>
+        <a href="https://wa.me/" data-aos="zoom-in" data-aos-delay="300"
+          ><i class="fa-brands fa-whatsapp" title="whatsapp"></i
+        ></a>
+        <a href="https://github.com/" data-aos="zoom-in" data-aos-delay="400"
+          ><i class="fa-brands fa-github" title="github"></i
+        ></a>
+      </div>
+      <p class="copyright" data-aos="fade-up" data-aos-delay="500">
+        &copy; 2026 Irsyad Azka Saputra. All Rights Reserved.
+      </p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        offset: 50,
+      });
+    </script>
+  </body>
 </html>

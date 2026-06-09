@@ -1,0 +1,638 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* =========================
+   TOGGLE BUTTON
+========================= */
+
+.toggle-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* =========================
+   HEADER
+========================= */
+/* =========================
+   HEADER ANIMATION (fade from top on load)
+========================= */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 12%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  animation: slideDown 0.7s ease forwards;
+}
+
+.logo {
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.logo span {
+  color: orangered;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 20px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: orangered;
+}
+
+/* =========================
+   HOME
+========================= */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4em;
+  padding: 160px 12% 100px;
+  background: #f1f1f1;
+}
+
+.home-content {
+  max-width: 700px;
+}
+
+.home-content h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: orangered;
+}
+
+.home-content h3 {
+  font-size: 35px;
+}
+
+.home-content h1 {
+  font-size: 58px;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+.home-content span {
+  color: orangered;
+}
+
+.home-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 25px 0;
+  max-width: 650px;
+}
+
+.img-box img {
+  width: 420px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.img-box img:hover,
+.about-img img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 40px rgba(255, 69, 0, 0.4);
+}
+
+/* Zoom gambar portfolio card */
+.portfolio-card {
+  background: #f1f1f1;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 350px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.08);
+}
+.btn-box {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-1,
+.btn-2 {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-1 {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+}
+
+.btn-1:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.btn-2 {
+  background: orangered;
+  color: #ffffff;
+  border: 2px solid orangered;
+}
+
+.btn-2:hover {
+  background: #ffffff;
+  color: orangered;
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  padding: 100px 12%;
+  background: #f1f1f1;
+}
+
+.about-img img {
+  width: 380px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px orangered;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h2 {
+  color: black;
+  font-size: 42px;
+}
+
+.about-content h3 {
+  color: black;
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.about-content span {
+  color: orangered;
+}
+
+.about-content p {
+  color: black;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   PORTFOLIO SECTION
+========================= */
+
+.portfolio-section {
+  padding: 180px 12% 100px;
+  background: #ffffff;
+}
+
+.portfolio-section .btn-box {
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+.section-title span {
+  color: orangered;
+}
+
+.portfolio-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-card h3 {
+  font-size: 24px;
+  padding: 20px 20px 10px;
+}
+
+.portfolio-card p {
+  padding: 0 20px 25px;
+  line-height: 1.7;
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact-form {
+  padding: 180px 12% 80px;
+  background: #f1f1f1;
+}
+
+.contact-form h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+.contact-form span {
+  color: orangered;
+}
+
+.contact-form form {
+  max-width: 800px;
+  margin: auto;
+}
+
+.input-box {
+  display: flex;
+  gap: 20px;
+}
+
+.input-box input {
+  width: 50%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+/* DESKRIPSI KONTAK */
+
+.contact-desc {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* INFORMASI KONTAK */
+
+.contact-info {
+  max-width: 800px;
+  margin: 0 auto 35px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-item i {
+  font-size: 24px;
+  color: orangered;
+}
+
+/* PENUTUP */
+
+.contact-closing {
+  text-align: center;
+  margin-top: 25px;
+  line-height: 1.8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background: #000000;
+  padding: 40px 0;
+}
+
+.footer .social {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer .social a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 2px solid orangered;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 22px;
+  margin: 0 8px;
+  transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+  background: orangered;
+  transform: translateY(-6px);
+}
+
+.footer .copyright {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+
+/* SECTION */
+body.dark-mode .home,
+body.dark-mode .contact-form {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .about {
+  background: #1e1e1e;
+}
+
+body.dark-mode .about-content h2,
+body.dark-mode .about-content h3,
+body.dark-mode .about-content p {
+  color: #ffffff;
+}
+
+body.dark-mode .portfolio-section {
+  background: #121212;
+}
+
+body.dark-mode .portfolio-card {
+  background: #1e1e1e;
+}
+
+body.dark-mode .portfolio-card h3,
+body.dark-mode .portfolio-card p {
+  color: #ffffff;
+}
+
+body.dark-mode .info-item {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+/* HEADER & FOOTER */
+body.dark-mode .header,
+body.dark-mode .footer {
+  background: #000000;
+}
+
+/* TEXT */
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #ffffff;
+}
+
+/* NAVBAR ACTIVE */
+body.dark-mode .navbar a:hover,
+body.dark-mode .navbar .active {
+  color: orangered;
+}
+
+/* BUTTON TOGGLE */
+body.dark-mode .toggle-btn {
+  background: #333333;
+  color: #ffffff;
+}
+
+.toggle-btn i {
+  font-size: 20px;
+}
+
+/* FORM */
+body.dark-mode input,
+body.dark-mode textarea {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+/* Section portofolio organisasi — background sedikit berbeda */
+.portfolio-section--alt {
+  background: #e8e8e8;
+}
+
+body.dark-mode .portfolio-section--alt {
+  background: #1a1a1a;
+}
+
+/* =========================
+   FORM VALIDATION
+========================= */
+.input-error {
+  border: 2px solid #e53e3e !important;
+  outline: none;
+}
+
+.error-msg {
+  display: block;
+  color: #e53e3e;
+  font-size: 13px;
+  margin-top: -14px;
+  margin-bottom: 12px;
+}
+
+.form-success {
+  background: #c6f6d5;
+  color: #276749;
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-success i {
+  margin-right: 8px;
+}
+
+body.dark-mode .form-success {
+  background: #1c4532;
+  color: #9ae6b4;
+}
+
+body.dark-mode .error-msg {
+  color: #fc8181;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home,
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home {
+    padding-top: 180px;
+  }
+
+  .img-box img,
+  .about-img img {
+    width: 260px;
+    object-fit: cover;
+    transition: 0.4s ease;
+  }
+
+  .home-content h1 {
+    font-size: 42px;
+  }
+
+  .home-content h2 {
+    font-size: 22px;
+  }
+
+  .home-content p,
+  .about-content p {
+    font-size: 16px;
+  }
+
+  .portfolio-card {
+    width: 100%;
+  }
+
+  .input-box {
+    flex-direction: column;
+  }
+
+  .input-box input {
+    width: 100%;
+  }
+
+  .btn-box {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .toggle-btn {
+    top: 80px;
+    right: 15px;
+  }
+}
